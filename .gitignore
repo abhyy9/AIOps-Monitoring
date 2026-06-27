@@ -1,0 +1,18 @@
+# Terraform
+terraform/.terraform/
+terraform/.terraform.lock.hcl
+terraform/terraform.tfstate
+terraform/terraform.tfstate.backup
+*.tfvars
+
+# Python
+__pycache__/
+*.pyc
+venv/
+*.env
+
+# Mac
+.DS_Store
+
+# PEM files
+*.pem
