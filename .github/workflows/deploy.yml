@@ -1,4 +1,5 @@
 name: AIOps Deploy
+# Updated SSH key
 
 on:
   push:
@@ -19,18 +20,11 @@ jobs:
         host: ${{ secrets.EC2_HOST }}
         username: ubuntu
         key: ${{ secrets.EC2_SSH_KEY }}
+        port: 22
+        timeout: 60s
         script: |
           cd AIOps-Monitoring
           git pull origin main
           cd monitoring
           sudo docker-compose up -d
-          cd ../api
-          sudo docker build -t aiops-api .
-          sudo docker stop aiops-api || true
-          sudo docker rm aiops-api || true
-          sudo docker run -d \
-            --name aiops-api \
-            --network monitoring_default \
-            -p 8000:8000 \
-            aiops-api
           echo "Deployment complete!"
