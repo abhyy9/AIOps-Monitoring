@@ -1,0 +1,36 @@
+name: AIOps Deploy
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v3
+
+    - name: Deploy to EC2
+      uses: appleboy/ssh-action@master
+      with:
+        host: ${{ secrets.EC2_HOST }}
+        username: ubuntu
+        key: ${{ secrets.EC2_SSH_KEY }}
+        script: |
+          cd AIOps-Monitoring
+          git pull origin main
+          cd monitoring
+          sudo docker-compose up -d
+          cd ../api
+          sudo docker build -t aiops-api .
+          sudo docker stop aiops-api || true
+          sudo docker rm aiops-api || true
+          sudo docker run -d \
+            --name aiops-api \
+            --network monitoring_default \
+            -p 8000:8000 \
+            aiops-api
+          echo "Deployment complete!"
