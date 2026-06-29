@@ -2,14 +2,13 @@ FROM python:3.11-slim
 
 WORKDIR /app
 
-COPY ../ai-model/requirements.txt .
+COPY ai-model/requirements.txt .
 RUN pip install --no-cache-dir -r requirements.txt
 
-COPY ../ai-model/train.py .
-COPY ../ai-model/ ./ai-model/
-COPY . .
-
+COPY ai-model/train.py .
 RUN python train.py
+
+COPY api/main.py .
 
 EXPOSE 8000
 
