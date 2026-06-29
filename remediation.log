@@ -1,0 +1,33 @@
+nohup: ignoring input
+2026-06-29 10:35:03,990 - INFO - AIOps Auto-Remediation System Started!
+2026-06-29 10:35:03,990 - INFO - Checking metrics every 30 seconds...
+2026-06-29 10:35:03,996 - INFO - Current Metrics → CPU: 3.48% | Memory: 23.71% | Disk: 32.35%
+2026-06-29 10:35:04,002 - INFO - Status: Normal ✅
+2026-06-29 10:35:34,009 - INFO - Current Metrics → CPU: 3.5% | Memory: 23.83% | Disk: 32.35%
+2026-06-29 10:35:34,014 - INFO - Status: Normal ✅
+2026-06-29 10:36:04,021 - INFO - Current Metrics → CPU: 3.49% | Memory: 23.83% | Disk: 32.35%
+2026-06-29 10:36:04,027 - INFO - Status: Normal ✅
+2026-06-29 10:36:34,033 - INFO - Current Metrics → CPU: 2.62% | Memory: 23.83% | Disk: 32.35%
+2026-06-29 10:36:34,039 - INFO - Status: Normal ✅
+2026-06-29 10:37:04,045 - INFO - Current Metrics → CPU: 0.86% | Memory: 23.84% | Disk: 32.35%
+2026-06-29 10:37:04,050 - INFO - Status: Normal ✅
+2026-06-29 10:37:34,062 - INFO - Current Metrics → CPU: 0.82% | Memory: 23.84% | Disk: 32.35%
+2026-06-29 10:37:34,068 - INFO - Status: Normal ✅
+2026-06-29 10:38:04,074 - INFO - Current Metrics → CPU: 0.81% | Memory: 23.84% | Disk: 32.35%
+2026-06-29 10:38:04,079 - INFO - Status: Normal ✅
+2026-06-29 10:38:34,086 - INFO - Current Metrics → CPU: 1.02% | Memory: 24.6% | Disk: 32.35%
+2026-06-29 10:38:34,091 - INFO - Status: Normal ✅
+2026-06-29 10:39:04,101 - INFO - Current Metrics → CPU: 1.02% | Memory: 24.6% | Disk: 32.35%
+2026-06-29 10:39:04,108 - INFO - Status: Normal ✅
+2026-06-29 10:39:34,115 - INFO - Current Metrics → CPU: 1.01% | Memory: 24.6% | Disk: 32.35%
+2026-06-29 10:39:34,120 - INFO - Status: Normal ✅
+2026-06-29 10:40:04,126 - INFO - Current Metrics → CPU: 0.97% | Memory: 24.6% | Disk: 32.35%
+2026-06-29 10:40:04,132 - INFO - Status: Normal ✅
+2026-06-29 10:40:34,140 - INFO - Current Metrics → CPU: 0.98% | Memory: 24.49% | Disk: 32.35%
+2026-06-29 10:40:34,148 - INFO - Status: Normal ✅
+2026-06-29 10:41:04,153 - INFO - Current Metrics → CPU: 0.98% | Memory: 24.44% | Disk: 32.35%
+2026-06-29 10:41:04,159 - INFO - Status: Normal ✅
+2026-06-29 10:41:34,165 - INFO - Current Metrics → CPU: 0.96% | Memory: 24.44% | Disk: 32.35%
+2026-06-29 10:41:34,170 - INFO - Status: Normal ✅
+2026-06-29 10:42:04,179 - INFO - Current Metrics → CPU: 0.94% | Memory: 24.44% | Disk: 32.35%
+2026-06-29 10:42:04,187 - INFO - Status: Normal ✅
